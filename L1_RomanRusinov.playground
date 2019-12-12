@@ -1,0 +1,51 @@
+//
+//  ViewController.swift
+//  L1_RomanRusinov
+//
+//  Created by Roman on 09.12.2019.
+//  Copyright © 2019 Roman. All rights reserved.
+//
+
+// Квадратное уравнение (вылазят ошибки на функции sqrt, пока не понял почему
+
+var a = 2
+var b = 3
+var c = -5
+if (a != 0) {
+    if (b != 0) && (c != 0){
+        let d = (b*b-4*a*c)
+        if (d<0) {
+            print("No roots")
+        } else if (d == 0) {
+            let x = (-b)/2*a
+            print("root: \(x)")
+        } else if (d>0) {
+            let x1: Double = ((Double(-b))+sqrt(Double(d)))/2*Double(a)
+            let x2: Double = ((Double(-b))-sqrt(Double(d)))/2*Double(a)
+            print("first root: (x1), second root: (x2)")
+        }
+    } else if (c == 0) {
+        let x1 = 0
+        let x2 = (-b)/a
+        print(x1,x2)
+    } else if (b == 0) && ((a>0)&&(c<0) || (a<0)&&(c>0)) {
+        let x = sqrt(Double(Double(-c)/Double(a)))
+        print ("first root: +(x), second root: -(x)")
+    }
+} else { print ("Input Error. It's not a quadratic equation if a=0!") }
+
+
+// Прямоугольный треугольник
+
+var cat1 = 4
+var cat2 = 5.5
+
+var g = sqrt(Double(cat1 * cat1 + cat2 * cat2)) // гипотенуза
+var s = Double(cat1) * cat2 / 2  // площадь
+var p = cat1 + cat2 + g   // периметр
+// Вклад (с этим заданием не успел разобраться, скину до понедельника)
+
+var m = print(Double /())        // сумма вклада
+var t = print(Double /())        // срок вклада
+
+
